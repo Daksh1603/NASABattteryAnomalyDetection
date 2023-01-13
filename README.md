@@ -1,4 +1,4 @@
-<img src="MachineB.jpg" width="1600px" height="200px">
+<img src="https://user-images.githubusercontent.com/90456255/212345055-b4f0361d-a563-4e36-a7a9-b4cff00a024b.jpg" width="1600px" height="200px">
 
 <p style="text-align: center;color:#FD6A02;font-size:25px;"><strong>Introduction</strong></p>
 
@@ -62,13 +62,21 @@ The 3 most important methods deployed for anomaly detection and their results we
 + <p style="color:#00704A">Inter-Quartile Range Elimination</p>  A total of **37,766** anomalies were detected using this method . Most of the data removed might not essential be outliers since multiple factors (engineered at the start of this project) might affect its classification . However, IQR doesn't consider these factors and classifies on the basis of hard and fast pre defined formula / rule leading to data loss .
 
 	Results of IQR Elimination visualised :
-
-
+![IQR1](https://user-images.githubusercontent.com/90456255/212345106-a5046ad9-9b07-4a08-9070-be356a018fef.png)
+![IQR2](https://user-images.githubusercontent.com/90456255/212345114-ac5c5697-06a4-4f0a-8fdf-bf6ff3089c80.png)
+![IQR3](https://user-images.githubusercontent.com/90456255/212345124-0b5050d7-5683-4202-b5fb-a1aa95669fbb.png)
 
 + <p style="color:#00704A">DBSCAN</p> A total of **14,218** anomalies were detected using this method . The following method makes use of a SOTA clustering method in order to classify anomalies . Eventough more accurate and resultfull than IQR Elimination , it still underperforms Isolation Forests for anomaly detection .
 
 	Results of DBSCAN visualised :
+![DB1](https://user-images.githubusercontent.com/90456255/212345143-01004890-a9b7-428d-9e56-8352be6e89a7.png)
+![DB2](https://user-images.githubusercontent.com/90456255/212345150-68f801d3-cdf6-47b1-8d64-5ee2d814834c.png)
+![DB3](https://user-images.githubusercontent.com/90456255/212345163-a41f44a1-1c30-46d2-b722-3bd1f61da94a.png)
 
 + <p style="color:#00704A">Isolation Forests</p>  An average total of **5,573** anomalies were detected using this method . These methods classify anomalies based on their scores through creating an ensemble of classification trees . These scores vary for different values of contamination , and the contamination values directly corresponds to confidence in anomaly classificaiton . Anomaly Score directly scales with contamination value .
 
-Results of Isolation Forests visualised :
+	Results of Isolation Forests visualised :
+![Iso1](https://user-images.githubusercontent.com/90456255/212345213-415e3e89-47b5-4ca0-8ebc-5a98e2ba3831.png)
+![Iso2](https://user-images.githubusercontent.com/90456255/212345237-129cafaf-1f32-48d0-96f8-8e484c4776e3.png)
+![Iso3](https://user-images.githubusercontent.com/90456255/212345248-b0f6ab1d-3c2a-435c-b9ea-7040ea5c2dab.png)
+![Iso4](https://user-images.githubusercontent.com/90456255/212345263-bdecc247-caf4-4018-ad11-04f43cb1dc38.png)
