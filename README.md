@@ -73,10 +73,14 @@ The 3 most important methods deployed for anomaly detection and their results we
 ![DB2](https://user-images.githubusercontent.com/90456255/212345150-68f801d3-cdf6-47b1-8d64-5ee2d814834c.png)
 ![DB3](https://user-images.githubusercontent.com/90456255/212345163-a41f44a1-1c30-46d2-b722-3bd1f61da94a.png)
 
-+ <p style="color:#00704A">Isolation Forests</p>  An average total of **5,573** anomalies were detected using this method . These methods classify anomalies based on their scores through creating an ensemble of classification trees . These scores vary for different values of contamination , and the contamination values directly corresponds to confidence in anomaly classificaiton . Anomaly Score directly scales with contamination value .
++ <p style="color:#00704A">Isolation Forests</p>  An average total of **5,573** anomalies were detected using this method . These methods classify anomalies based on their scores through creating an ensemble of classification trees . These scores vary for different values of contamination , and the contamination values directly corresponds to confidence in anomaly classificaiton . No. of anomalies directly scales with contamination value .
 
 	Results of Isolation Forests visualised :
 ![Iso1](https://user-images.githubusercontent.com/90456255/212345213-415e3e89-47b5-4ca0-8ebc-5a98e2ba3831.png)
 ![Iso2](https://user-images.githubusercontent.com/90456255/212345237-129cafaf-1f32-48d0-96f8-8e484c4776e3.png)
+
+> Red extreme of the cmap corresponds to critical anomalies .
+> Green extreme of the cmap corresponds to normal data .
+
 ![Iso3](https://user-images.githubusercontent.com/90456255/212345248-b0f6ab1d-3c2a-435c-b9ea-7040ea5c2dab.png)
 ![Iso4](https://user-images.githubusercontent.com/90456255/212345263-bdecc247-caf4-4018-ad11-04f43cb1dc38.png)
